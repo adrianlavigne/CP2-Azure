@@ -1,6 +1,12 @@
-variable "vm_size" {
+variable "vm_size1" {
         type = string
         description = "Tamaño de la máquina virtual(master)"
+        default = "Standard_B2ms" # 8 Gb, 2 CPU
+}
+
+variable "vm_size2" {
+        type = string
+        description = "Tamaño de la máquina virtual(worker)"
         default = "Standard_B2s" # 4 Gb, 2 CPU
 }
 
